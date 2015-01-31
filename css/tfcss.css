@@ -1,0 +1,126 @@
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+
+div, ul, li, a, form, input, h1, h2, p {
+    margin: 0px;
+    padding: 0px;
+
+}
+#map-canvas { height: 90%; width: 70%; border-top: 3px solid #383838; float: right; }
+#map-panel { height: 90%; width: 30%; border-top: 3px solid #383838; float: left; overflow: hidden; }
+h2 { font-size: 20px; font-family: sans-serif; font-weight: 100; text-decoration: underline; }
+/*.rule-cell button { height: 30px; width: 110px; }*/
+#copyright { font-size: 11px; font-family: sans-serif }
+
+.header {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    display: block;
+    overflow: visible;
+}
+.header img { float: left; }
+.toolbox { float: right; height: 40px; width: 900px; margin: 24px 0px 0px; font-size: 12px; color: #555555; }
+.header input { }
+.header input[type='checkbox'] { margin-left: 30px; margin-right: 2px; }
+.header button { vertical-align: top; margin-right: 20px; }
+#searchBar { width: 300px;
+    height: 30px;
+    background-color: #FFFFFF;
+    /*border: 3px solid #e10026; */
+    color: #000000;
+    font-size: 14px;  }
+.button-red { width: 120px; height: 40px; background-color: #e10026; margin: 0px; padding: 0px; }
+.icon-search { background-image: url("../img/icon-search-40.png"); background-repeat: no-repeat; background-position: center;}
+.icon-refresh { background-image: url("../img/icon-refresh-40.png"); background-repeat: no-repeat; background-position: center; }
+.main-settings-box { width: 200px; height: 50px; float: right; }
+
+.buttonsmall-red { height: 24px; background-color: #e10026; margin: 0px auto; padding: 0px 10px 0px 32px; text-align: right; color: #FFFFFF; font-size: 12px; background-position: left; }
+.buttonpanel-red { height: 24px; width: 40px; background-color: #e10026; margin: 0px auto; padding: 0px; text-align: right; color: #FFFFFF; font-size: 12px; background-position: center; }
+.icon-update { background-image: url("../img/icon-upload-24.png"); background-repeat: no-repeat; background-position: left;  }
+.icon-add { background-image: url("../img/icon-add-24.png"); background-repeat: no-repeat; }
+.icon-delete { background-image: url("../img/icon-delete-24.png"); background-repeat: no-repeat;  }
+.icon-newrule { background-image: url("../img/icon-newrule-24.png"); background-repeat: no-repeat;  }
+.icon-horizontal { background-image: url("../img/icon-horizontal-24.png"); background-repeat: no-repeat;}
+.icon-vertical { background-image: url("../img/icon-vertical-24.png"); background-repeat: no-repeat;  }
+.icon-verify { background-image: url("../img/icon-verify-24.png"); background-repeat: no-repeat; }
+.icon-hide { background-image: url("../img/icon-hide-24.png"); background-repeat: no-repeat; }
+.icon-view { background-image: url("../img/icon-view-24.png"); background-repeat: no-repeat;  }
+.icon-trash { background-image: url("../img/icon-trash-24.png"); background-repeat: no-repeat;  }
+
+
+#tabs { min-height:250px; max-height:400px; overflow-y:auto; }
+
+.new-tracks { color: #000000; }
+.new-tracks th { font: 12px Arial; font-weight: bold; text-transform: uppercase; background: #FF8C00; }
+.new-tracks tr {}
+.new-tracks td { padding: 3px; border: 1px solid #D3D3D3; font: 12px Arial; text-align: center; margin: 0px auto; }
+.panel-bg { background: #ccdfff; overflow: hidden; height: 300px;}
+
+.table-track { background: #FF8C00; }
+.table-track tr { }
+.table-track td { width: 100px; height: 16px; border: 1px solid #D3D3D3; padding: 2px; }
+.data-h1 { background: #FFFFFF; color: #000000; text-align: right; font-size: 12px; }
+
+/*.iw-controls { margin: 10px auto; text-align: center; height: 40px; }*/
+/*.iw-controls button, */
+.rule-cell { background: #FFFFFF; border: 1px solid #D3D3D3; }
+.table-ruletimes { background: #FFFFFF; margin: 0px auto; text-align: center; }
+.table-ruletimes tr { }
+.table-ruletimes td { height: 16px; border: none; padding: 1px; vertical-align: middle; border: 1px solid #D3D3D3; }
+.table-ruletimes input { margin: 1px 4px; display: inline;  }
+.input-time { width: 30px; height: 26px;  }
+.table-ruledays { background: #FFFFFF; margin: 0px auto; text-align: center; }
+.table-ruledays tr { }
+.table-ruledays th { }
+.table-ruledays td { width: 20px; height: 20px; border: none; padding: 1px; font-weight: bold; font-size: 12px; vertical-align: middle; text-align: center; }
+
+.box_normal { width: 160px; height: 30px; font-size: 18px; font-weight: bold; background: #FFFFFF; margin: 1px auto; text-align: center; }
+
+.color-red { color: #FF0000; }
+.color-green { color: #00AD1A; }
+.color-darkgray { color: #383838; }
+.color-black { color: #000000; }
+.color-orange { color: #FF8C00; }
+
+.right-click-panel {width: 200px; height: 200px; margin: 0px auto; }
+.right-click-panel button {width: 160px; height: 40px; margin: 4px auto; }
+
+.yellow-gradient {
+    background: #f1e767;
+    background: -moz-linear-gradient(top,  #f1e767 0%, #feb645 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1e767), color-stop(100%,#feb645));
+    background: -webkit-linear-gradient(top,  #f1e767 0%,#feb645 100%);
+    background: -o-linear-gradient(top,  #f1e767 0%,#feb645 100%);
+    background: -ms-linear-gradient(top,  #f1e767 0%,#feb645 100%);
+    background: linear-gradient(to bottom,  #f1e767 0%,#feb645 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 );
+}
+.blue-gradient {
+    background: #93cede;
+    background: -moz-linear-gradient(top,  #93cede 0%, #75bdd1 41%, #49a5bf 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#93cede), color-stop(41%,#75bdd1), color-stop(100%,#49a5bf));
+    background: -webkit-linear-gradient(top,  #93cede 0%,#75bdd1 41%,#49a5bf 100%);
+    background: -o-linear-gradient(top,  #93cede 0%,#75bdd1 41%,#49a5bf 100%);
+    background: -ms-linear-gradient(top,  #93cede 0%,#75bdd1 41%,#49a5bf 100%);
+    background: linear-gradient(to bottom,  #93cede 0%,#75bdd1 41%,#49a5bf 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf',GradientType=0 );
+}
+
+.parking_sign {
+    height: 400px;
+    width: 300px;
+}
+
+.bar {
+    height: 18px;
+    background: green;
+}
+
+
+@media only screen and (max-width: 699px) {
+    .navbar-brand img { width: 60%; }
+    #map-canvas { height: 90%; width: 100%; border-top: 3px solid #383838; }
+    #map-panel { visibility: hidden; }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>       <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TicketFree Admin Tool</title>
+    <meta name="description" content="View Street Parking Tracks">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <!--jQuery + UI-->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+    <!--Google Maps-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR6j-xea5g2ksZvybPD_cNGKcLj72z3Cg&libraries=drawing&sensor=false"></script>
+
+    <!--SugarJS-->
+    <!--<script src="http://sugarjs.com/release/current/sugar.min.js"></script>-->
+
+    <!-- jQuery File Upload -->
+    <link rel="stylesheet" href="css/jquery.fileupload.css">
+    <script src="js/vendor/jquery.ui.widget.js"></script>
+    <script src="js/jquery.iframe-transport.js"></script><!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+    <script src="js/jquery.fileupload.js"></script><!-- The basic File Upload plugin -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+    <!--TicketFree Engine-->
+    <link rel="stylesheet" href="css/tfcss.css">
+    <script src="js/tfadmin.js"></script>
+
+</head>
+<body>
+<!--[if lt IE 7]>
+
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+
+<![endif]-->
+<nav class="navbar navbar-default" role="navigation" style="margin: 0px; padding: 0px">
+    <div class="container-fluid">
+        
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/banner-20h.png"/></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-top: 15px">
+            
+            <ul class="nav navbar-nav navbar-left">
+                <li><a>Parking Map</a></li>
+            </ul>
+            
+            <div class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Parking Near..." id="searchBar"/>
+                    <button id="main-search" type="submit" class="btn btn-default" onclick="mainSearch()">Search</button>
+                    <button id="main-refresh" class="btn btn-default" onclick="mainRefresh()">Refresh</button>
+                </div>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right" role="filter">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filter<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a><input type="checkbox" id="view_tracks" checked="checked"/>Rule Tracks</a></li>
+                        <li><a><input type="checkbox" id="view_signs" checked="checked"/>Parking Signs</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="navbar-form navbar-right" style="margin-right: 30px" role="time">
+                <div class="form-group">
+                </div>
+                <button id="main-share" class="btn btn-default">Share</button>
+            </div>
+            
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div id="map-canvas">
+    LOADING GOOGLE MAP
+</div>
+<div id="map-panel">
+    LOADING PANEL
+</div>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</body>
+</html>
+
